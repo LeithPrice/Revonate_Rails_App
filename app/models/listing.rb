@@ -4,10 +4,12 @@ class Listing < ApplicationRecord
   has_rich_text :description
 
   enum condition: {
-    Repairable_writeoff: 1,
-    Statutory_writeoff: 2,
-    Vintage_fixer_upper: 3,
-    Mechanical_repair_needed: 4
+    Nothing_but_bones: 1,
+    Only_good_for_parts: 2,
+    Needs_a_ground_up_repair: 3,
+    Mechanically_fine_but_needs_full_body_work: 4,
+    Body_is_fine_but_needs_major_mechanical_work: 5,
+    Someone_with_spanners_could_fix_it: 6
   }
 
 
