@@ -12,7 +12,7 @@ class CreateListings < ActiveRecord::Migration[6.1]
       t.integer :condition
       t.integer :seats
       t.integer :doors
-      t.boolean :sold
+      t.boolean :sold, default: false
       t.integer :price
       t.references :user, null: false, foreign_key: true
       t.references :category, null: false, foreign_key: true
