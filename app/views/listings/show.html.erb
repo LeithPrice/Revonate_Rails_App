@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @listing.year %>
+</p>
+
+<p>
+  <strong>Month:</strong>
+  <%= @listing.month %>
+</p>
+
+<p>
+  <strong>Manufacturer:</strong>
+  <%= @listing.manufacturer %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @listing.model %>
+</p>
+
+<p>
+  <strong>Bodytype:</strong>
+  <%= @listing.bodytype %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @listing.state %>
+</p>
+
+<p>
+  <strong>Odometer:</strong>
+  <%= @listing.odometer %>
+</p>
+
+<p>
+  <strong>Colour:</strong>
+  <%= @listing.colour %>
+</p>
+
+<p>
+  <strong>Condition:</strong>
+  <%= @listing.condition %>
+</p>
+
+<p>
+  <strong>Seats:</strong>
+  <%= @listing.seats %>
+</p>
+
+<p>
+  <strong>Doors:</strong>
+  <%= @listing.doors %>
+</p>
+
+<p>
+  <strong>Sold:</strong>
+  <%= @listing.sold %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @listing.price %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @listing.description %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @listing.user_id %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @listing.category_id %>
+</p>
+
+<%= link_to 'Edit', edit_listing_path(@listing) %> |
+<%= link_to 'Back', listings_path %>
