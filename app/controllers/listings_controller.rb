@@ -4,7 +4,7 @@ class ListingsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   before_action :authorize_user, only: [:edit, :update, :destroy]
 
-  
+
   # GET /listings or /listings.json
   def index
     @listings = Listing.all
@@ -82,6 +82,6 @@ class ListingsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def listing_params
-      params.require(:listing).permit(:year, :month, :manufacturer, :model, :bodytype, :state, :odometer, :colour, :condition, :seats, :doors, :sold, :price, :description, :user_id, :category_id)
+      params.require(:listing).permit(:year, :month, :manufacturer, :model, :bodytype, :state, :odometer, :colour, :condition, :seats, :doors, :sold, :price, :description, :user_id, :category_id, :picture)
     end
 end
