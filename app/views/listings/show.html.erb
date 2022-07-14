@@ -8,6 +8,7 @@
 <% end %>
 </div>
 
+<%= button_to "Buy now!", place_order_path %>
 
 <p>
   <strong>Year:</strong>
@@ -89,7 +90,9 @@
   <%= @listing.category_id %>
 </p>
 
-<% if current_user.id == @listing.user.id %>
+<%= button_to "Buy now!", place_order_path %>
+
+<% if current_user && current_user.id == @listing.user.id %>
   <%= link_to 'Edit', edit_listing_path(@listing) %> |
   <% end %>
 
