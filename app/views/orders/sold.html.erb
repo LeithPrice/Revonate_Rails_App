@@ -27,13 +27,13 @@
     <% @sold_items.each do |item| %>
       <tr>
         <td><%= item.listing.year %></td>
-        <td><%= ltem.listing.manufacturer %></td>
+        <td><%= item.listing.manufacturer %></td>
         <td><%= item.listing.model %></td>
         <td><%= item.listing.state %></td>
         <td><%= item.listing.condition %></td>
         <td><%= item.listing.price %></td>
         <td><%= item.seller.username %></td> 
-        <td><%= link_to 'Show', listing %></td>
+        <td><%= link_to 'Show', item.listing %></td>
       <tr>
     <% end %>
   <tbody>
