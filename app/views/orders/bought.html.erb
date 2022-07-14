@@ -1,0 +1,40 @@
+<h1>Vehicles you have purchased</h1>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <%# <th>Month</th> %>
+      <th>Manufacturer</th>
+      <th>Model</th>
+      <%# <th>Bodytype</th> %>
+      <th>State</th>
+      <%# <th>Odometer</th> %>
+      <%# <th>Colour</th> %>
+      <th>Condition</th>
+      <%# <th>Seats</th> %>
+      <%# <th>Doors</th> %>
+      <th>Price</th>
+      <%# <th>Description</th> %>
+      <th>Seller</th>
+      <%# <th>Category</th> %>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bought_items.each do |item| %>
+      <tr>
+        <td><%= item.listing.year %></td>
+        <td><%= item.listing.manufacturer %></td>
+        <td><%= item.listing.model %></td>
+        <td><%= item.listing.state %></td>
+        <td><%= item.listing.condition %></td>
+        <td><%= item.listing.price %></td>
+        <td><%= item.seller.username %></td> 
+        <td><%= link_to 'Show', item.listing %> </td>
+      <tr>
+    <% end %>
+  <tbody>
+</table>
