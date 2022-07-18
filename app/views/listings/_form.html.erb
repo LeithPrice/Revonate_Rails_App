@@ -18,13 +18,20 @@
 
   <div class="field">
     <%= form.label :condition %>
-    <%= form.select :condition, @conditions.map %>
-
+    <%= form.select :condition, options_for_select(Listing.conditions.map {|key, value| 
+    [key.titleize, Listing.conditions.key(value)]}, @listing.condition) %>
   </div>
 
- <div class="field">
+  <div class="field">
     <%= form.label :state %>
-    <%= form.select :state, @states.map %>
+    <%= form.select :state, options_for_select(Listing.states.map {|key, value| 
+    [key.titleize, Listing.states.key(value)]}, @listing.state) %>
+  </div>
+
+<div class="field">
+    <%= form.label :bodytype %>
+    <%= form.select :bodytype, options_for_select(Listing.bodytypes.map {|key, value| 
+    [key.titleize, Listing.bodytypes.key(value)]}, @listing.bodytype) %>
   </div>
 
   <div class="field">
@@ -58,11 +65,7 @@
     <%= form.rich_text_area :description %>
   </div>
 
-  <div class="field">
-    <%= form.label :bodytype %>
-    <%= form.select :bodytype, @bodytypes.map %>
-  </div>
-
+  
   <div class="field">
     <%= form.label :odometer %>
     <%= form.number_field :odometer %>

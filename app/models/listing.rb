@@ -25,14 +25,14 @@ class Listing < ApplicationRecord
     Australian_Capital_Territory: 8
 }
 
-enum bodytype: {
-  Coupe: 1,
-  Hatch: 2,
-  Light_Truck: 3,
-  Sedan: 4,
-  Ute: 5,
-  Van: 6,
-  Wagon: 7,
-  Other: 8,
-}
+  enum bodytype: {
+    Coupe: 1,
+    Hatch: 2,
+    Light_Truck: 3,
+    Sedan: 4,
+    Ute: 5,
+    Van: 6,
+    Wagon: 7,
+    Other: 8,
+  }
 end
