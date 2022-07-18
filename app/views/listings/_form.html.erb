@@ -28,7 +28,7 @@
     [key.titleize, Listing.states.key(value)]}, @listing.state) %>
   </div>
 
-<div class="field">
+  <div class="field">
     <%= form.label :bodytype %>
     <%= form.select :bodytype, options_for_select(Listing.bodytypes.map {|key, value| 
     [key.titleize, Listing.bodytypes.key(value)]}, @listing.bodytype) %>

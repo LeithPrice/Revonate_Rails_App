@@ -5,4 +5,7 @@ module ListingsHelper
         end
         words.join(" ")
     end
+
+
+    
 end
