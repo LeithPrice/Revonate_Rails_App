@@ -64,7 +64,7 @@ ActiveRecord::Schema.define(version: 2022_07_14_123312) do
     t.string "month"
     t.string "manufacturer"
     t.string "model"
-    t.string "bodytype"
+    t.integer "bodytype"
     t.string "state"
     t.integer "odometer"
     t.string "colour"
