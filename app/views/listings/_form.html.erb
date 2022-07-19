@@ -24,14 +24,12 @@
 
   <div class="field">
     <%= form.label :state %>
-    <%= form.select :state, options_for_select(Listing.states.map {|key, value| 
-    [key.titleize, Listing.states.key(value)]}, @listing.state) %>
+    <%= form.text_field :state %>
   </div>
 
   <div class="field">
     <%= form.label :bodytype %>
-    <%= form.select :bodytype, options_for_select(Listing.bodytypes.map {|key, value| 
-    [key.titleize, Listing.bodytypes.key(value)]}, @listing.bodytype) %>
+    <%= form.text_field :bodytype %>
   </div>
 
   <div class="field">
@@ -54,7 +52,6 @@
     <%= form.text_field :manufacturer %>
   </div>
 
-
   <div class="field">
     <%= form.label :model %>
     <%= form.text_field :model %>
@@ -64,7 +61,6 @@
     <%= form.label :description %>
     <%= form.rich_text_area :description %>
   </div>
-
   
   <div class="field">
     <%= form.label :odometer %>

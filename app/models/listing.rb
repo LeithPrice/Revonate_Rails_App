@@ -14,25 +14,36 @@ class Listing < ApplicationRecord
     Someone_with_spanners_could_fix_it: 6
   }
 
-  enum state: {
-    Queensland: 1,
-    New_South_Wales: 2,
-    Victoria: 3,
-    Tasmania: 4,
-    South_Australia: 5,
-    Northern_Territory: 6,
-    Western_Australia: 7,
-    Australian_Capital_Territory: 8
-}
+#   enum state: {
+#     Queensland: 1,
+#     New_South_Wales: 2,
+#     Victoria: 3,
+#     Tasmania: 4,
+#     South_Australia: 5,
+#     Northern_Territory: 6,
+#     Western_Australia: 7,
+#     Australian_Capital_Territory: 8
+# }
 
-  enum bodytype: {
-    Coupe: 1,
-    Hatch: 2,
-    Light_Truck: 3,
-    Sedan: 4,
-    Ute: 5,
-    Van: 6,
-    Wagon: 7,
-    Other: 8,
-  }
+#   enum bodytype: {
+#     Coupe: 1,
+#     Hatch: 2,
+#     Light_Truck: 3,
+#     Sedan: 4,
+#     Ute: 5,
+#     Van: 6,
+#     Wagon: 7,
+#     Other: 8
+#   }
+
+    # enum seat: {
+    #   One: 1,
+    #   Two: 2,
+    #   Three: 3,
+    #   Four: 4,
+    #   Five: 5,
+    #   Six: 6,
+    #   Seven: 7,
+    #   Eight: 8
+    # }
 end

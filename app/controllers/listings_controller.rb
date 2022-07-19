@@ -83,8 +83,9 @@ class ListingsController < ApplicationController
     def set_form_vars
       @categories = Category.all
       @conditions = Listing.conditions.keys
-      @states = Listing.states.keys
-      @bodytypes = Listing.bodytypes.keys
+      # @states = Listing.states.keys
+      # @bodytypes = Listing.bodytypes.keys
+      # @seats = Listing.seats.keys
     end
 
     def  authorize_user
