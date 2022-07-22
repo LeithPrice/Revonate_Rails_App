@@ -14,6 +14,9 @@ class Listing < ApplicationRecord
     Someone_with_spanners_could_fix_it: 6
   }
 
+  
+# failed attempts at drop down boxes
+
 #   enum state: {
 #     Queensland: 1,
 #     New_South_Wales: 2,
